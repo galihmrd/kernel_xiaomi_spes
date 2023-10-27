@@ -4,7 +4,7 @@
 # Copyright (C) 2020-2021 Adithya R.
 
 SECONDS=0 # builtin bash timer
-ZIPNAME="seodalmi-$(date '+%Y%m%d-%H%M')-erofs.zip"
+ZIPNAME="seodalmi-ksu-$(date '+%Y%m%d-%H%M')-erofs.zip"
 TC_DIR="$(pwd)/tc/clang-r450784e"
 AK3_DIR="$(pwd)/android/AnyKernel3"
 DEFCONFIG="vendor/spes-perf_defconfig"
@@ -23,6 +23,9 @@ if ! [ -d "$TC_DIR" ]; then
 		exit 1
 	fi
 fi
+
+# KSU
+rm -rf KernelSU && curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
 
 if [[ $1 = "-r" || $1 = "--regen" ]]; then
 	make O=out ARCH=arm64 $DEFCONFIG savedefconfig
