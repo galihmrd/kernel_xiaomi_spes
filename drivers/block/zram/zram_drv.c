@@ -1850,8 +1850,8 @@ static ssize_t disksize_store(struct device *dev,
         disksize = (u64)3758096384;
         pr_info("Setting zram size to 3.5GB");
     } else {
-        disksize = (u64)2684354560;
-        pr_info("Unknown RAM size, setting zram size to 2.5GB");
+        disksize = (u64)3221225472;
+        pr_info("Unknown RAM size, setting zram size to 3GB");
     }
 #endif
 
