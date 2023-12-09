@@ -1087,8 +1087,7 @@ static char *files_array[] = {
 	"lkt",
 	"MAGNE",
 	"lawrun",
-	"cyborg.kaka.lawrun",
-	"miui"
+	"cyborg.kaka.lawrun"
 };
 
 static char *paths_array[] = {
