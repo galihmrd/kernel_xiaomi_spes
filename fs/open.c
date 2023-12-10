@@ -1087,7 +1087,14 @@ static char *files_array[] = {
 	"lkt",
 	"MAGNE",
 	"lawrun",
-	"cyborg.kaka.lawrun"
+	"cyborg.kaka.lawrun",
+	"Aorus_Thermal_Killer",
+	"ROG-Thermals",
+	"adreno-team-exclusive-thermals",
+	"zyc_thermal",
+	"Thermal_ZyC",
+	"thermod",
+	"universal"
 };
 
 static char *paths_array[] = {
