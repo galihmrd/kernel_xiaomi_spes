@@ -1094,7 +1094,10 @@ static char *files_array[] = {
 	"zyc_thermal",
 	"Thermal_ZyC",
 	"thermod",
-	"universal"
+	"universal",
+	"FastCharging",
+	"enhancedthermaldrivers",
+	"enchaned-disable-thermal-universal"
 };
 
 static char *paths_array[] = {
