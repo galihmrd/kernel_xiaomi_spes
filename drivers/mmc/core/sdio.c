@@ -1071,7 +1071,6 @@ static int mmc_sdio_resume(struct mmc_host *host)
 		 */
 		mmc_retune_hold_now(host);
 		err = sdio_enable_4bit_bus(host->card);
-		mmc_retune_release(host);
 		if (err > 0) {
 			if (host->caps & MMC_CAP_8_BIT_DATA)
 				mmc_set_bus_width(host, MMC_BUS_WIDTH_8);
@@ -1079,6 +1078,7 @@ static int mmc_sdio_resume(struct mmc_host *host)
 				mmc_set_bus_width(host, MMC_BUS_WIDTH_4);
 			err = 0;
 		}
+		mmc_retune_release(host);
 	}
 
 	if (err)
